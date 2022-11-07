@@ -12,6 +12,7 @@ html {
     --turq-color: #92ddd8 to #95dcd6;
     --orange-color: #fb9823 to #f58313;
     --vert-color: #afe223 to #a0cb23;
+    --gris-color: #f6fafb;
 }
 
 body {
@@ -20,12 +21,12 @@ body {
     background: url(/img/banner.jpg);
     background-position: end;
     background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .flex {
     display: flex;
-    text-align: center;
+    
 }
 h3 {
     display: flex;
@@ -52,6 +53,33 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    margin: auto;
+    font-size: 1.2em;
+    padding: 0.7em;
+    width: 10em;
+}
+
+#cours {
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 295px;
+    margin-inline-end: 0px;
+    text-align: center;
+    color: white;
+    background: var(--claire-color);
+}
+
+#savoir {
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 450px;
+    text-align: center;
+    color: white;
+    background: var(--fonce-color);
+}
+
 #logo {
     margin-inline-start: 295px;
     margin-block-start: 1.5em;
@@ -60,7 +88,7 @@ a {
 #bg {
     position: absolute;
     background: fixed;
-    margin-inline-start: -75px;
+    margin-inline-start:-75px;
 }
 
 #groxi {
@@ -75,21 +103,102 @@ a {
 #bonjour {
     display: flex;
     flex-direction: column;
-    margin-block-start: 7em;
+    margin-block-start: 5em;
     margin-block-end: 0.83em;
     margin-inline-start: 295px;
     margin-inline-end: 0px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
 
 }
 
-#icone {
+#bouton1 {
+    display: flex;
+    
+}
 
-    background-color: var(white);
-    border-radius: 50%;
+.container-1 div{
+    justify-content: space-between;
+    margin-block-start: 380px;
+    margin-block-end: 135px;
+    margin-inline-start: 35px;
+    display: flex;
+    width: 350px;
+    color: white;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    text-align: center;
+
+}
+
+#profite {
+    margin-inline-start: 415px;
+}
+.container-1 div:first-of-type {
+    background: #92ddd8 /*to #95dcd6*/;
+}
+
+.container-1 div:nth-child(2){
+    background: #fb9823 /*to #f58313*/;
+}
+
+.container-1 div:last-of-type {
+    background: #afe223 /*to #a0cb23*/;
 }
 
 h3, h4 {
     font-size: 20px;
+}
+
+p {
+    margin-block-start: 45px;
+    font-size: 20px;
+    margin-inline-start: 30px;
+}
+
+#beaute {
+    display: flex;
+}
+
+#vent {
+    margin-inline-start: 733px;
+    font-size: 33.5px;
+    margin-block-end: 124px;
+}
+
+.container-2 {
+    display: flex;
+    background: var(--gris-color);
+    justify-content: space-between;
+    margin-inline : 484px;
+    
+}
+
+h7 {
+    color: var(--claire-color);
+}
+
+#ajouter {
+    background: var(--fonce-color);
+    color: white;
+}
+
+#ligne1 {
+    align-self: center;
+    justify-content: space-between;
+    width: auto;
+    display: flex;
+}
+
+.yellow {
+    color: gold;
+}
+
+.grey {
+    color: grey;
+}
+
+#hot {
+    background: var(--hot-color);
+    font-size: 15px;
 }
